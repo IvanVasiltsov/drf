@@ -14,6 +14,7 @@ class Women(models.Model):
 
 
 class Category(models.Model):
+    # Не определен первичный ключ, поэтому тип первичного ключа прописываем в settings или apps.py
     name = models.CharField(max_length=100, db_index=True)
 
     def __str__(self):
